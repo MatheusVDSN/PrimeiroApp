@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@300;400&display=swap');
+* {
+    color: rgb(0, 0, 0);
+}
+
+.box1 {
+    background-image: url('../../assets/Temadefundo.jpg');
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    margin: 15px 5% 10px 5%;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    border-radius: 15px;
+    margin: 15px 5% 10px 5%;
+}
+
+
+.fotos-box{
+    width: 100%;
+    display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-end;
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.fotos {
+    width: 95%;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
+    transition: .3s;
+    box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
+}
+
+.fotos:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 33px 10px rgba(255,0,0,1);
+}
+
+.foto1{
+    background-image: url('../../assets/btbruce.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.foto2{
+    background-image: url('../../assets/-pinguim-.jpg');
+    background-size: cover;
+    background-position: 75% 10%;
+}
+.foto3{
+    background-image: url('../../assets/charada.jpg');
+    background-size: cover;
+    background-position: 50% 20%;
+}
+.foto4{
+    background-image: url('../../assets/Falcone.jpg');
+    background-size: cover;
+    background-position: 50% 35%;
+}
+
+@media(max-width: 768px){
+    .fotos-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 480px){
+    .fotos-box {
+        grid-template-columns: 1fr;
+    }
+}

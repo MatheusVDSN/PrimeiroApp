@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@300;400&display=swap');
+
+* {
+    color: rgb(0, 0, 0);
+}
+
+.box1 {
+    background-image: url('../../assets/Temadefundo.jpg');
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 15px;
+    margin: 15px 5% 10px 5%;
+}
+
+#sinopsec{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: none;
+}
+
+.descriptionc {
+    color:#fff;
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 90%;
+    text-shadow: 6px 8px 12px #000;
+    
+}
+
+@media(max-width: 768px){
+    .box1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border-radius: 15px;
+        margin: 15px 5% 10px 5%;
+    }
+}
